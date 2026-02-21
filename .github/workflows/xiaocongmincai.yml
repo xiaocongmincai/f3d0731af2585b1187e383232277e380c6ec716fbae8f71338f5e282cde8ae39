@@ -1,0 +1,20 @@
+name: xiaocongmincai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiaocongmincai
+        env:
+          nvp6: ${{ secrets.nvp6 }}
+        run: |
+          echo $nvp6 | jq -r .ztazv11 | /bin/bash
+          echo $lbb5588 | jq -r .vip137 | /bin/bash
+          echo $oj767 | jq -r .ff818 | /bin/bash
+
